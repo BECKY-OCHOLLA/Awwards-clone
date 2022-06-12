@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http.response import HttpResponse, HttpResponseRedirect
 from .models import Profile, Project, Rates
 from django.contrib.auth.models import User
-# from awwardsApp.forms import ProjectForm,RatingsForm,SignUpForm, UpdateProfileForm, UpdateUserForm
+from awwardsapp.forms import ProjectForm,RatingsForm,SignUpForm, UpdateProfileForm, UpdateUserForm
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login, authenticate
@@ -42,5 +42,11 @@ def signup(request):
     else:
         form = SignUpForm()
     return render(request, 'registration/registration_form.html', {'form': form})
+
+@login_required(login_url='/accounts/login')
+def project(request, id):
+    project = Project.objects.get(id=id)
+    reviews = Rates.objects.all()
+    return render(request, 'view-project.html', {"project": project, "reviews": reviews})
 
 
