@@ -88,5 +88,12 @@ def view_project(request, id):
     }
     return render(request, 'view-project.html', params)
 
+@login_required(login_url='/accounts/login/')
+def profile(request):
+    current_user = request.user
+    projects = Project.objects.filter(user=current_user.id).all
+    return render(request, 'registration/profile.html', {"projects": projects})
+
+
 
 
