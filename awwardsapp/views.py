@@ -9,6 +9,18 @@ from django.contrib.auth import login, authenticate
 from django.shortcuts import get_object_or_404, render, redirect
 from django.urls import reverse
 # Create your views here.
+
+#APIS
+from .models import Profile, Project, Rates
+from .serializers import ProfileSerializer, ProjectSerializer
+from django.http import Http404
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework import status
+
+
+
+
 def index(request):
     profile = Profile.objects.all()
     projects = Project.objects.all()
