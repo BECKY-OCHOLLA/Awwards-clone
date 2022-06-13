@@ -10,6 +10,7 @@ Becky Ocholla
 A Django application that allows users to share their projects and recieve ratings from other users. Links to the live projects are provided and one can view the live app/site.
 
 ## Live Link
+https://peerawwards.herokuapp.com/
 
 
 
