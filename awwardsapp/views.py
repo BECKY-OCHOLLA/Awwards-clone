@@ -133,6 +133,18 @@ def post_project(request):
         form = ProjectForm()
     return render(request, 'projects.html', {"form": form})
 
+class ProfileList(APIView):
+    """
+    List all snippets, or create a new snippet.
+    """
+
+    def get(self, request, format=None):
+        profiles = Profile.objects.all()
+        serializer = ProfileSerializer(profiles, many=True)
+        return Response(serializer.data)
+
+
+
 
 
 
