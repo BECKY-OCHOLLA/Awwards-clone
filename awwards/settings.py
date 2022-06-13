@@ -36,13 +36,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
 MODE=config("MODE", default="dev")
 SECRET_KEY = config('SECRET_KEY')
-
+# DEBUG = config('DEBUG', default=False, cast=bool)
 # development
 if config('MODE')=="dev":
    DEBUG=True
@@ -191,8 +191,14 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Configure Django App for Heroku.
 django_heroku.settings(locals())
 
+# cloudinary.config( 
+#   cloud_name=config('CLOUD_NAME'), 
+#   api_key=config('API_KEY'), 
+#   api_secret=config('API_SECRET'),
+# )
 cloudinary.config( 
-  cloud_name=config('CLOUD_NAME'), 
-  api_key=config('API_KEY'), 
-  api_secret=config('API_SECRET'),
+  cloud_name='becky', 
+  api_key='756394519674228', 
+  api_secret='2jPC3sxda5h1l5YounK2l1UdKHM'
+
 )
