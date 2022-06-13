@@ -14,4 +14,6 @@ urlpatterns=[
     path('project/(<id>', views.view_project, name='view_project'),
 
 ]
+if settings.DEBUG:
+    urlpatterns+= static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
     
