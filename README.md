@@ -1,16 +1,17 @@
-# Developers' Awwards.
+# Peer Awwards.
 
 ## Author
 
-[**Kipyegon Kirui Vitalis**](https://github.com/Vitalis-Kirui)
+Becky Ocholla
+
 
 ## Description
 
-A Django application that allows users to share their projects and recieve ratings from other users. Links to the live projects are provided and one can the live app/site.
+A Django application that allows users to share their projects and recieve ratings from other users. Links to the live projects are provided and one can view the live app/site.
 
 ## Live Link
 
-[View Site](https://vitalis-awwards.herokuapp.com/)
+
 
 ## User Story
 
@@ -23,8 +24,8 @@ A Django application that allows users to share their projects and recieve ratin
 
 ## API Endpoints
 
-* [Profiles Endpoints](https://vitalis-awwards.herokuapp.com/api/v1/profile)
-* [Projects Endpoints](https://vitalis-awwards.herokuapp.com/api/v1/projects)
+* [Profiles Endpoints]()
+* [Projects Endpoints]()
 
 ## Prerequisites
 
@@ -41,10 +42,10 @@ You need the following to start working on this project: On your local system;
 To get the code..
 
 1. Clone the repository:
- `git clone  https://github.com/Vitalis-Kirui/Developers-Awwards.git`
+ git clone : https://github.com/BECKY-OCHOLLA/Awwards-clone`
 
 2. Move to the folder and install requirements
- ` cd Developers Awwards-`
+ 
 
 3. In the projects root directory, install the virtualenv library using pip and create a virtual environment. Run the following commands respectively:
     - **`pip install virtualenv`**
@@ -58,22 +59,35 @@ To get the code..
 
 ## Technology used
 
-* [Python3.8](https://www.python.org/)
-* [Django](https://docs.djangoproject.com)
-* [Heroku](https://heroku.com)
+* Python3.8
+* Django
+* Heroku
 * Git
-* Bootstrap 4.3.1
+* Bootstrap 
 
-## Known Bugs
 
-* There are no known bugs currently but pull requests are allowed incase you spot a bug
 
 ## Contact Information 
 
-If you have any question or contributions, please email me at [vitaliskirui1@gmail.com]
+If you have any question or contributions, please email me at ochollabecky@gmail.com
 
 ## License
+Copyright (c) 2022 Becky Ocholla
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-Copyright © 2021  [Kipyegon Kirui Vitalis](https://github.com/jLuseno161)
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

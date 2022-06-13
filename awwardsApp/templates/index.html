@@ -33,12 +33,14 @@ h1{
 
 #home{
     padding-top:20px;
-    background-color: rgb(224, 231, 161);
+    background-color:rgb(5, 5, 114);
     margin-top: -20px;
-    padding-bottom:20px
+    padding-bottom:20px;
+    height: 400px;
+    
 }
 .footer{
-    background-color: rgb(224, 231, 161);
+    background-color: lightblue;
     font-size: 25px;
     padding:20px
 }
@@ -52,17 +54,17 @@ h1{
 <div id="home">
     <div id="overlay" class="row">
         <div class="intro col-md-12 text-center ">
-            <h1 id="welcome_text">Welcome to Developers' Awwards</h1>
+            <h1 id="welcome_text">Welcome to Peers' Awwards</h1>
             <hr>
-            <h3 id="description" style="margin-bottom: 5%;">Developers' Awwards is a place where you share you projects,
+            <h3 id="description" style="margin-bottom: 5%;color: aliceblue;">Peers' Awwards is a place where you share you projects,
                 get reviews and ratings from other users.</h3>
-            <a href="{% url 'post_project' %}"> <input type="button" style="font-size: 25px;background-color:blue" class="btn btn-info " value="Post Project"></a>
+            <a href="{% url 'post_project' %}"> <input type="button" style="font-size: 20px;background-color:blue;border-radius: 10px;" class="btn btn-info " value="Post Project"></a>
         </div>
     </div>
 </div>
 <div class="container projects">
 
-    <h1 class='text-center' >Posted Projects</h1>
+    <h1 class='text-center' style="color: black;" >Posted Projects</h1>
     <hr>
 
     <div class="container " style="margin-bottom: 10%;">
@@ -98,7 +100,7 @@ h1{
 </div>
 
 <footer class="footer">
-    <p class="text-center">© Kipyegon Kirui Vitalis. All Rights Reserved</p>
+    <p class="text-center" style="font-size: 20px;">© Bekita</p>
 </footer>
 {% endblock %}
 </html>
