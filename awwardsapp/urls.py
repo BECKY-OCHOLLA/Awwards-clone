@@ -12,8 +12,11 @@ urlpatterns=[
     path('update/<id>', views.update_profile, name='update_profile'),
     path('post/',views.post_project,name='post_project'),
     path('project/(<id>', views.view_project, name='view_project'),
-
+    path('api/v1/profile',views.ProfileList.as_view(),name='profileEndpoint'),
+    path('api/v1/projects',views.ProjectList.as_view(),name='projectsEndpoint')
 ]
+
+
 if settings.DEBUG:
     urlpatterns+= static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
     
